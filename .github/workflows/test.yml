@@ -1,0 +1,20 @@
+ name: Build and Print 
+  
+ on: 
+   push: 
+     branches: [ "main" ] 
+   workflow_dispatch: 
+  
+ jobs: 
+   print-hello: 
+     name: Print Hello World 
+     runs-on: ubuntu-latest 
+  
+     steps: 
+       - name: Checkout 
+         uses: actions/checkout@v4 
+  
+       - name: Run script 
+         run: | 
+           chmod +x ./helloworld.sh 
+           ./helloworld.sh
