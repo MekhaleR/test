@@ -14,6 +14,6 @@ trigger:
            - checkout: self 
   
            - script: | 
-               chmod +x ./myscript/helloworld.sh 
-               ./myscript/helloworld.sh 
+               chmod +x ./helloworld.sh 
+               ./helloworld.sh 
              displayName: 'Run helloworld.sh'
